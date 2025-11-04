@@ -12,7 +12,7 @@ COPY src ./src
 RUN mvn clean package
 
 # Runtime stage
-FROM openjdk:17
+FROM amazoncorretto:17
 
 # Set the working directory
 WORKDIR /app
